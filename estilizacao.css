@@ -1,0 +1,132 @@
+/*body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200 ;
+    font-style: normal;
+   
+}*/
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200 ;
+    font-style: normal;
+    background-size: 400% 400%; /* Tamanho maior para a animação */
+    animation: gradientAnimation 10s infinite alternate; /* Define a animação */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+        background-image: linear-gradient(to right, #0b486b, #f56217);
+    }
+    50% {
+        background-position: 100% 50%;
+        background-image: linear-gradient(to right, #f56217, #16a085);
+    }
+    100% {
+        background-position: 0% 50%;
+        background-image: linear-gradient(to right, #16a085, #0b486b);
+    }
+}
+header {
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+   /* border: 1px solid #ccc; */
+    padding: 15px;
+    font-size: 300;
+    color: white;
+    
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: 100;
+}
+
+#imagem-lateral {
+    position: fixed; /* Fixa a imagem na tela, mesmo durante a rolagem */
+    top: 50%; /* Posiciona o topo da imagem no centro vertical da tela */
+    right: 20px; /* Define a distância da imagem da borda direita (ajuste conforme necessário) */
+    transform: translateY(-50%); /* Ajusta a imagem para que seu centro fique no centro vertical */
+    z-index: -1; /* Opcional: Coloca a imagem atrás do conteúdo principal (ajuste conforme necessário) */
+    opacity: 0.8; /* Opcional: Define a transparência da imagem (ajuste conforme necessário) */
+    /* Outros estilos que você queira aplicar à imagem (largura, altura, etc.) */
+    width: 500px;
+    height: 500px;
+}
+
+#estrelas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite que os cliques passem pelas estrelas */
+    z-index: -2; /* Coloca as estrelas atrás do background */
+}
+
+.estrela {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%; /* Cria o formato circular */
+    opacity: 0;
+    animation: piscar 1.5s infinite alternate; /* Animação de piscar */
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+container{
+    margin-bottom: 20px;
+    /* border: 1px solid #ccc; */
+     padding: 15px;
+     font-size: 300;
+     color: white;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira Página Web</title>
+    <link rel="stylesheet" href="estilizacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    <header>
+        <h1> THIS IS BIANCAT </h1>
+        <nav>
+            <ul>
+                <li> <a href="https://www.facebook.com/seuperfil" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github-alt"></i> GIT HUB
+                </a> </li>
+                <li>  <a href="https://www.facebook.com/seuperfil" target="_blank" rel="noopener noreferrer"> </a> <i class="fa-brands fa-linkedin-in"></i> LINKEDIN</a></li>
+                <li>  <a href="https://www.facebook.com/seuperfil" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-whatsapp"></i> WHATSAPP </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2> HI, STRANGER </h2>
+            <p>👋 Hi! I'm a Front-End Developer in transition from the field of Advertising to Tech.</p>
+
+                <p> 🚀 Passionate about building clean and responsive web applications using HTML, CSS, JavaScript, and React. </p>
+                
+                <p> 🎯 Currently learning back-end development with Node.js to become a fullstack developer. </p>
+                
+                🌍 Actively looking for remote opportunities and international projects and open to collaborations and always eager to learn more!
+                
+                <p>📫 Let’s connect!
+
+        </section>
+
+        <section>
+            <div class="container">
+                <h1> MY HABILITIES </h1>
+                <div class="item"> FullStack Developer </div>
+                <div class="item"> Intermediate English, Basic Spanish and Fluent Portuguese</div>
+                <div class="item"> Ready and open to new opportunities around the word! </div>
+              </div>
+        </section>
+
+        <img id="imagem-lateral" src="C:\Users\bad bibi\Pictures\v.png" alt="Imagem Lateral">
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Minha Página Web. Todos os direitos reservados.</p>
+    </footer>
+    
+    <div id="estrelas-container"></div>
+<script>
+    const numEstrelas = 100; // Número de estrelas
+    const estrelasContainer = document.getElementById('estrelas-container');
+
+    function criarEstrela() {
+        const estrela = document.createElement('div');
+        estrela.classList.add('estrela');
+        estrela.style.left = `${Math.random() * 100}vw`;
+        estrela.style.top = `${Math.random() * 100}vh`;
+        estrela.style.animationDelay = `${Math.random() * 5}s`; // Varia o tempo de início da animação
+        estrelasContainer.appendChild(estrela);
+    }
+
+    for (let i = 0; i < numEstrelas; i++) {
+        criarEstrela();
+    }
+</script>
+</body>
+</html>
